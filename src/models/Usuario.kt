@@ -19,10 +19,10 @@ class Usuario (
         emprestimo.atualizarStatus(StatusEmprestimo.DEVOLVIDO)
     }
     fun listarEmprestimo () {
-        println(emprestimo.toList())
+        println(emprestimos.toList())
     }
     fun locarLivro(livro: Livro){
         val novo_emprestimo:Emprestimo = Emprestimo(livro, this, LocalDate.now(), LocalDate.now().plusWeeks(1), StatusEmprestimo.PEDENTE)
-        emprestimo.add(novo_emprestimo)
+        emprestimos.add(novo_emprestimo)
     }
 }
