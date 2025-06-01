@@ -1,4 +1,12 @@
 package models
 
-abstract class Pessoa (val nome: String, val CPF: String,){
+import java.util.Date
+
+abstract class Pessoa (
+    open val nome: String,
+    open val CPF: String,
+    open val dataNascimento: Date,
+    open val endereco: String
+){
+
 }
