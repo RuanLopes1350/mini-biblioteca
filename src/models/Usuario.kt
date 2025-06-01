@@ -11,7 +11,7 @@ class Usuario (
     private val telefone: String
 ): Pessoa(nome, CPF, dataNascimento, endereco ){
     private val id: String = gerarId()
-    private val emprestimo = mutableListOf<Emprestimo>()
+    private val emprestimos = mutableListOf<Emprestimo>()
     private fun gerarId():String{
         return UUID.randomUUID().toString()
     }
